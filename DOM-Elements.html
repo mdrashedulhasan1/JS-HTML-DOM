@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="my-name"></p>
+    <p class="my-name2"></p>
+    <h2></h2>
+    <h1 class="my-friend"></h1>
+    <script>
+        //Finding HTML Element by id
+        document.getElementById('my-name').innerHTML = 'Rashedul';
+
+        //Finding HTML Elements by TagName
+        const friend = document.getElementsByTagName('h2');
+        for(const friendName of friend){
+            friendName.innerHTML = 'Rakib';
+        }
+
+        //Finding HTML Elements by ClassName
+        const myName = document.getElementsByClassName('my-name2');
+        for(const myName2 of myName){
+            myName2.innerHTML = "Tapu";
+        }
+
+        //Finding HTML Elements by CSS Selectors
+        const anotherFriend = document.querySelectorAll('h1.my-friend');
+        for(const myFriendName of anotherFriend){
+            myFriendName.innerHTML = 'Sarowal';
+        }
+    </script>
+</body>
+</html>

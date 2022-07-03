@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CSS</title>
+</head>
+
+<body>
+    <p id="my-name">My Name</p>
+    <button onclick="clicked()">Click</button>
+    <script>
+        function clicked() {
+            document.getElementById('my-name').style.backgroundColor = 'red';
+            document.getElementById('my-name').style.padding = '10px 20px';
+            document.getElementById('my-name').style.textAlign = 'center';
+            document.getElementById('my-name').style.fontSize = '20px';
+            document.getElementById('my-name').style.color = 'white';
+            document.getElementById('my-name').style.fontWeight = '900';
+            document.getElementById('my-name').style.margin = '20px 40px';
+        }
+    </script>
+</body>
+
+</html>

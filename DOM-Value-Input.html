@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- JS Can Validate Numeric Input -->
+    <p>Please input a number between 1 and 7</p>
+    <input id="input-field" type="text">
+    <button onclick="ValueInput()">Value Input</button>
+    <h1 id="output"></h1>
+    <script>
+        function ValueInput(){
+           const inputField =  document.getElementById('input-field').value;
+           let text;
+           if(isNaN(inputField) || inputField<1 || inputField>7){
+            text = 'Input is not a valid number';
+           }
+           else{
+            text = 'Valid Input';
+           }
+           document.getElementById("output").innerHTML = text;
+        }
+    </script>
+</body>
+</html>
